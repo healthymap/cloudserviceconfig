@@ -1,6 +1,7 @@
 # knowledge_graphy_config_server
 knowledge_graphy项目的云端配置
 
+## 配置文件路径规则
 
 ```
 仓库中的配置文件会被转换成web接口，访问可以参照以下的规则：
@@ -15,6 +16,7 @@ knowledge_graphy项目的云端配置
 
 即在浏览器中输入的路径会按照上面的规则，
 切割并输入成对应的application,profile和label的值
+
 
 ---
 
@@ -38,3 +40,8 @@ knowledge_graphy项目的云端配置
 /{application}-{profile}.properties
 /{label}/{application}-{profile}.properties
 ```
+
+## 其他
+## 根目录下的application.properties和application.yml默认为共用
+配置文件，会被所有客户端共用 
+## gitte(码云)的git服务不知道为什么，获取不到Yml文件内容
